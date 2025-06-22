@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+
+  <h2>Contact Us</h2>
+
+        <form id = "contact form" action="https://formsubmit.co/kamdikayah@gmail.com" method="post" enctype="multipart/form-data" target="_blank">
+            <input type ="hidden" name="_captcha" value="false">
+            <input type ="hidden" name="_next" value="Thankyou.html">
+
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">prefer not to say</label><br><br>
+
+            
+            <label>Services Interested In (checkbox):</label><br>
+            <input type="checkbox" id="web" name="services" value="Web Design">
+            <label for="web">Web Design</label><br>
+            <input type="checkbox" id="seo" name="services" value="SEO">
+            <label for="seo">SEO</label><br>
+            <input type="checkbox" id="marketing" name="services" value="Marketing">
+            <label for="marketing">Marketing</label><br><br>
+
+            <!-- Select Dropdown -->
+            <label for="topic">Select Topic:</label><br>
+            <select id="topic" name="topic" required>
+            <option value="">--Select--</option>
+            <option value="Support">Support</option>
+            <option value="Sales">Sales</option>
+            <option value="Feedback">Feedback</option>
+            </select><br><br>
+
+            <!-- Message -->
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+</body>
+</html>
